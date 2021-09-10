@@ -95,7 +95,7 @@ describe('getReviewByIndex', ()=>{
 
 describe('getLastReview', ()=>{
     it('getLastReview returns a string', ()=>{
-        expect(functions.getLastReview(reviews)).toBe(`Reyna gave the restaurant a 3.5 star review, and their feedback was: this place is chill with really cool people, great for getting work done on weekdays`);
+        expect(functions.getLastReview(reviews)).toBe(`Reyna gave the restaurant a 3.5 star review, and their feedback was: this place is chill with really cool people, great for getting work done on weekdays.`);
     })
 });
 

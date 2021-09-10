@@ -95,8 +95,8 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   1. Add this feedback to Reyna's rating - "this place is chill with really cool people, great for getting work done on weekdays"
   2. log the reviews array to the console to check your work
 */
-reviews[7].feedback = 'this place is chill with really cool people, great for getting work done on weekdays';
-console.log(reviews);
+// reviews[7].feedback = 'this place is chill with really cool people, great for getting work done on weekdays';
+// console.log(reviews);
 reviews.push({name: 'Reyna', rating: 5, feedback: 'this place is chill with really cool people, great for getting work done on weekdays'});
 
 console.log('task 4:', reviews)
@@ -112,10 +112,18 @@ Write a function that creates an object with name, rating, feedback, add the new
   3. The function should push the following object to the array: {name: 'Daniela', rating: 5, review: 'Beautiful atmosphere and wonderful vegan options!' }
   4. should return the resulting array
 */
-function addReview(arr, name, rating, review){
-  arr.push{'Reyna',  5, 'this place is chill with really cool people, great for getting work done on weekdays'};
+function addReview(arr){
+arr.push({name: 'Daniela', rating: 5, feedback: "great eats!"});
+return arr
 }
-console.log(addReview(reviews))
+console.log('task 5:', addReview(reviews))
+//   var Reviewresults = [];
+//     for (var i = 0; i < arguments.length; i++) {
+//         results.push(arguments[i]);
+//     }
+//     return Reviewresults;
+// }
+
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -144,7 +152,8 @@ Use the getLastReview function below to do the following:
   2. Return the last index as a string in the format: "{name} gave the restaurant a {rating} star review, and their feedback was: {feedback}"
   3. Invoke the function with the reviews array as the argument
   
-  For example: getLastReview(reviews) would return: "Reyna gave the restaurant a 3.5 star review, and their feedback was: this place is chill with really cool people, great for getting work done on weekdays".
+  For example: getLastReview(reviews) would return: "Reyna gave the restaurant a 3.5 star review, and their feedback was: this place is chill with really cool people, great for getting work done on weekdays"
+
 */
 
 
@@ -152,6 +161,7 @@ function getLastReview(arr){
   return `${arr[arr.length-1].name} gave the restaurant a ${arr[arr.length-1].rating} star review, and their feedback was: ${arr[arr.length-1].feedback}.`
 } 
 console.log(getLastReview(reviews))
+console.log(reviews)
 // array[array.length - 1]
 
 
@@ -171,8 +181,8 @@ Use the getReviewsByRating function below to do the following:
   ]
 */
 
- function getReviewByRating(/* code here */) {
-    /* code here */
+ function getReviewByRating() {
+    
   }
 
   
